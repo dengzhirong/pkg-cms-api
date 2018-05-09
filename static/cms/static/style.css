@@ -1,0 +1,230 @@
+/* ======== reset start ======== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body { line-height: 1; }
+ol, ul { list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table { border-collapse: collapse; border-spacing: 0;}
+/* ======== reset end ======== */
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+#app {
+  width: 100%;
+  height: 100%;
+}
+.page-login .code-wrap svg {
+  display: block;
+  height: 40px !important;
+}
+.flex-center {
+  -js-display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-center-vertical {
+  -js-display: flex;
+  display: flex;
+  align-items: center;
+}
+.fl { float: left;}
+.fr { float: right; }
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden}
+.clearfix {}
+
+.main-aside .el-menu-item-group .el-menu-item-group__title {
+  padding: 0;
+}
+.main-aside .el-submenu .el-menu-item {
+  height: 35px;
+  line-height: 35px;
+  padding-left: 70px !important;
+}
+.main-aside .el-menu-item,
+.main-aside .el-submenu__title {
+  height: 48px;
+  line-height: 48px;
+}
+.el-menu--vertical .el-menu-item,
+.el-menu--vertical .el-submenu__title {
+  height: 40px;
+  line-height: 40px;
+}
+
+.el-menu--vertical .el-menu-item-group__title {
+  padding: 0;
+}
+.el-menu--vertical .el-menu--popup {
+  min-width: 120px;
+}
+.main-aside .el-menu-item-group .el-menu-item {
+  position: relative;
+}
+.main-aside .el-menu-item-group .el-menu-item:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  left: 52px;
+  top: 50%;
+  margin-top: -5px;
+}
+.el-menu-item a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.el-menu-item.is-active a {
+  display: block;
+  color: #ffd04b;
+  text-decoration: none;
+}
+
+.main-aside .el-menu-item-group .el-menu-item.is-active:before {
+  border: 1px solid #ffd04b;
+}
+.cms-i-nav .el-button.is-circle {
+  padding: 7px;
+}
+.cms-main-body .nav-title {
+  font-size: 20px;
+}
+.cms-main-body .nav-title:before {
+  margin-right: 8px;
+}
+.cms-main-body .el-table td,
+.cms-main-body .el-table th {
+  padding: 7px 0;
+}
+
+/* 登录 */
+.page-login .el-form-item__label:before {
+  display: none;
+}
+.page-login .auto-complete .el-input__inner {
+  background: #faf8d0;
+
+}
+
+
+/* app列表页搜索 */
+.cms-page-applist .search-box {
+  padding-top: 17px;
+  border-bottom: 1px solid #eee;
+}
+.cms-page-applist .search-box .el-select>.el-input {
+  width: 85px;
+}
+.cms-page-applist .search-box .el-select>.el-input .el-input__inner {
+  padding-left: 7px;
+}
+.cms-page-applist .search-box .el-date-editor.el-input__inner,
+.cms-page-applist .search-box .el-date-editor.el-input {
+  width: 115px;
+}
+.cms-page-applist .search-box .el-input--mini .el-input__inner {
+  padding-right: 10px;
+}
+.cms-page-applist .search-box .el-input--mini {
+  width: 95px;
+}
+.cms-page-applist .search-box .el-form-item__label {
+  font-size: 13px;
+  padding-right: 5px;
+}
+.cms-page-applist .pagination-info .num {
+  color: #f43837;
+}
+.cms-page-applist .el-table tr:nth-child(odd) {
+  background: #fcfcfc;
+}
+/* app修改弹窗 */
+.cms-main-body .i-appmodify-pop .el-dialog__body {
+  padding: 8px 25px 15px;
+}
+.i-appmodify-pop .el-dialog {
+  width: 425px;
+
+}
+
+/* 个人中心页 */
+.avatar-item .el-form-item__label {
+  line-height: 80px;
+}
+.cms-page-center .el-input.is-disabled .el-input__inner {
+  background-color: transparent;
+  border-color: transparent;
+  color: #282828;
+  cursor: default;
+}
+.cms-page-center .userinfo .el-input__suffix {
+  display: none;
+}
+.cms-page-center .userinfo.isEditing .el-input__suffix {
+  display: inline-block;
+}
+.cms-page-center .i-pwd-pop .el-dialog {
+  width: 300px;
+}
+.cms-page-center .i-pwd-pop .el-dialog__body {
+  padding: 15px 27px 20px;
+}
+
+.cms-p-list .i-pagination {
+  color: #666;
+  font-size: 14px;
+  padding: 20px 10px 0;
+}
+.cms-p-list .i-pagination .pagination-info {
+
+  line-height: 33px;
+  margin-right: 10px;
+}
+.cms-p-list .i-pagination .el-form-item__label {
+  color: #a3a3a3;
+}
+
+/* 用户列表 */
+.cms-p-list.cms-user-list .search-box .el-input--mini {
+  width: 105px;
+}
+
+
+/* ================= */
+.cms-i-nav { margin-top: 15px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

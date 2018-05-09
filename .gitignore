@@ -1,0 +1,10 @@
+.idea/
+package-lock.json
+
+log/
+doc/
+node_modules/
+backup_mysql/
+
+config/config.env.dev.js
+config/config.env.pro.js
